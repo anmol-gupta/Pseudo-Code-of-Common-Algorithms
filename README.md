@@ -120,4 +120,34 @@ for i=1 to m {
 return c;
 } 
 ```
+
+## 5. Stack
+
+*Implementation of Stack*
+
+```
+class Stack:
+	function constructor()
+		items = [] // declare empty array
+		head = -1
+
+	function push(x)
+		head = head + 1
+		items.insert(head, x)
+
+	function pop()
+		if stackisEmpty():
+			print("Stack is empty !!!")
+		else:
+			x = items[head]
+			items.pop(head)
+			head-=1
+			return x
+			
+	function size()
+		return stack total items
+
+	function stackisEmpty()
+		return head == -1
+```
 > More will be updated.
