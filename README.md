@@ -123,7 +123,7 @@ return c;
 
 ## 5. Stack
 
-*Implementation of Stack.
+*Implementation of Stack*
 
 ```
 class Stack:
