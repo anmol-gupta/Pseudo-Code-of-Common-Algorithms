@@ -150,4 +150,31 @@ class Stack:
 	function stackisEmpty()
 		return head == -1
 ```
+
+## 6. Bellman-Ford Algorithm 
+
+*Statement* - To find shortest path in the graph and also return false if the graph contains negative weight cycle.
+
+Let 'G' be the graph.
+
+Let 'w' be the weighted matrix.
+
+Let 'S' be the source.
+
+```
+Bellman-Ford(G,w,S) 
+{
+Initialise single source (S) to 0
+\\ S -> 0 and (S-1) vertices -> infinite 
+for i=1 to |G.V| - 1 {
+	for each edge (u,v) belongs to G.E {
+		Relax (u,v,w)
+	}
+}
+for each edge (u,v) belongs to G.E {
+	if(v.value> u.value + w(u,v)) 
+		return false;
+	return true;
+}
+```
 > More will be updated.
